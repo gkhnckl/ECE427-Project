@@ -1,0 +1,3 @@
+Change directory to G:Drive
+
+jupyter notebook --notebook-dir="G:\\"
