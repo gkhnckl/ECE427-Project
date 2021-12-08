@@ -2,4 +2,5 @@ Change directory to G:Drive
 
 jupyter notebook --notebook-dir="G:\\"
 
-Megaline!!
+
+jupyter notebook --notebook-dir="D:\GitHub\ECE427-Project" 
