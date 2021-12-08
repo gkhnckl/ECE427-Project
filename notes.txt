@@ -4,3 +4,6 @@ jupyter notebook --notebook-dir="G:\\"
 
 
 jupyter notebook --notebook-dir="D:\GitHub\ECE427-Project" 
+
+
+https://matpower.org/docs/MATPOWER-manual.pdf
