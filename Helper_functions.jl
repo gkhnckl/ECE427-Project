@@ -344,7 +344,7 @@ function print_voltage_magnitudes(network_data)
 for i in keys(network_data["bus"])
     
     # Read in voltage data
-    vm = network_data["solution"]["bus"][i]["vm"]
+    vm = network_data["bus"][i]["vm"]
     vmax = network_data["bus"][i]["vmax"]
     vmin = network_data["bus"][i]["vmin"]
     
@@ -440,7 +440,7 @@ if result["termination_status"]==true
     println("The solver found an AC power flow solution.")
     success = true
     # Apply the solution to the network data
-    PowerModels.update_data!(network, result)
+    PowerModels.update_data!(network, result["solution"])
     
     # Also calculate and apply the branch flows
     flows = calc_branch_flow_ac(network)
